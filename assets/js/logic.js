@@ -27,6 +27,39 @@ let feedBackElement = document.getElementById("feedback");
 let sfxCorrect = new Audio("assets/sfx/correct.wav");
 let sfxIncorrect = new Audio("assets/sfx/incorrect.wav");
 
+function questionClick(){
+    if(this.value !== questions[currentQuestionIndex].answer){
+        time-=15;
+
+        if(time < 0) {
+            time = 0;
+        }
+
+        timerElement.textContent = time;
+
+        feedBackElement.textContent = "Wrong";
+            sfxIncorrect.play();
+        } else {
+            sfxCorrect.play();
+        feedBackElement.textContent = "Correct!";
+    }
+
+
+    feedBackElement.setAttribute("class", "feedback");
+
+    setTimeout(function(){
+        feedBackElement.setAttribute("class", "feedback hide") 
+    }, 1000);
+
+    currentQuestionIndex++;
+
+    if(currentQuestionIndex === questions.length) {
+        quizEnd()
+    } else {
+        getQuestion();
+    }
+}
+
 function getQuestion(){
     let currentQuestion = questions[currentQuestionIndex];
 
@@ -52,9 +85,7 @@ function getQuestion(){
 
 }
 
-function questionClick(){
 
-}
 
 function quizEnd(){
     clearInterval(timerID);
