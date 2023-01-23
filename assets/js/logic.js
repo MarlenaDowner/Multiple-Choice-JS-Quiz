@@ -3,29 +3,23 @@ let currentQuestionIndex = 0;
 let time = questions.length * 12;
 let timerID;
 
-// //creat all the functions that are LINKED from the HTML these functions are DOING something in the quiz, later logic will be added to them
-// //SOME of them are button which event listner will need to be used see below
+//link the HTML element to JS via elementID
 
-// // function startQuiz will need a get elementById, link the HTML element and the set an atrribute class
-
-let questionsElement = document.getElementById("questions");
 let timerElement = document.getElementById("time");
-let choicesElement = document.getElementById("choices");
-let submitButton = document.getElementById("submit");
 let startButton = document.getElementById("start");
+let questionsElement = document.getElementById("questions");
+let choicesElement = document.getElementById("choices");
 let initialElement = document.getElementById("initials");
+let submitButton = document.getElementById("submit");
 let feedBackElement = document.getElementById("feedback");
 
-// let timerElement = document.getElementById("time");
-// let startButton = document.getElementById("start");
-// let questionsElement = document.getElementById("questions");
-// let choicesElement = document.getElementById("choices");
-// let initialElement = document.getElementById("initials");
-// let submitButton = document.getElementById("submit");
-// let feedBackElement = document.getElementById("feedback");
+//sound effects on right or wrong answer
 
 let sfxCorrect = new Audio("assets/sfx/correct.wav");
 let sfxIncorrect = new Audio("assets/sfx/incorrect.wav");
+
+
+//function, go through and add logic
 
 function questionClick(){
     if(this.value !== questions[currentQuestionIndex].answer){

@@ -1,3 +1,5 @@
+//scores and logging to local storage
+
 function printHighScores(){
     let highScores = JSON.parse(localStorage.getItem("highscores")) || [];
 
@@ -13,8 +15,6 @@ function printHighScores(){
         ol.appendChild(li);
 
     })
-
-
 }
 
 function clearHighScores(){

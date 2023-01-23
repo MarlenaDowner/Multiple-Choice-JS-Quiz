@@ -1,6 +1,5 @@
 //put questions in varibles
 
-
 let questions = [
 {
     "title": "Who is Trunks?:",
