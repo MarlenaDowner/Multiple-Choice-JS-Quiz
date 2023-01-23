@@ -8,26 +8,26 @@ let questions = [
     "answer": "Vegeta's Son"
 },
 {   "title": "A wounded Z fighter would restore the full health by using which item?:",
-    "choices": ["Capsule medicine", "Senzu bean", "Saiyan liquid", "Drinking water"],
+    "choices": ["Capsule medicine", "Saiyan liquid", "Drinking water", "Senzu bean"],
     "answer": "Senzu bean"
 },
 {
     "title": "Which wearable device is used by the Friezas army to measure power levels?:",
-    "choices": ["Radar", "Scouter", "Gauger", "Power level remote"],
+    "choices": ["Radar", "Gauger", "Scouter", "Power level remote"],
     "answer": "Scouter"
 },
 {   "title": "The first time when Goku becomes a Super Saiyan happens in which planet?:",
-    "choices": ["The planet of King Kai", "Planet Namek", "Planet Vegeta", "Planet Earth"],
+    "choices": ["Planet Namek", "The planet of King Kai", "Planet Vegeta", "Planet Earth"],
     "answer": "Planet Namek"
 },
 {
     "title": "What is the last wish that Krillin makes with the Dragon God after defeating Cell?:",
-    "choices": ["Bring all victims of Cell back to life", "Remove the bombs inside the Androids", "Regrown hair on his head", "To be rich"],
+    "choices": ["Bring all victims of Cell back to life", "Regrown hair on his head", "Remove the bombs inside the Androids", "To be rich"],
     "answer": "Remove the bombs inside the Androids"
 },
 {
     "title": "How can Vegeta and Goku fuse to become Gogeta?:",
-    "choices": ["Wear the Potara earrings", "Perform the fusion dance", "Use the Namekian fusion technique", "Use the dragon balls"],
+    "choices": ["Perform the fusion dance", "Use the Namekian fusion technique", "Use the dragon balls", "Wear the Potara earrings"],
     "answer": "Wear the Potara earrings"
 },
 {
