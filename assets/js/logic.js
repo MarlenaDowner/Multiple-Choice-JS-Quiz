@@ -81,8 +81,6 @@ function getQuestion(){
 
         choicesElement.append(choiceButton);
     })
-
-
 }
 
 
@@ -127,14 +125,28 @@ function startQuiz(){
 }
 
 
-
-
 function saveHighScore(){
+    let initials = initialElement.value.trim();
+
+    if(initials !== ""){
+        let saveHighScores = JSON.parse(localStorage.getItem("highscores")) || [];
+        let newScore = {
+            score: time,
+            initials: initials
+        }
+
+        saveHighScores.push(newScore);
+        localStorage.setItem("highscores", JSON.stringify(saveHighScores));
+
+        window.location.href = "highscores.html";
+    }
 
 }
 
 function checkForEnter(event){
-
+    if(event.key === "Enter"){
+        saveHighScore();
+    }
 }
 
 // //adds the event listers because there is a button that needs to be clicked
