@@ -1,7 +1,7 @@
 //put questions in varibles
 
 
-let question = [
+let questions = [
 {
     "title": "Who is Trunks?:",
     "choices": ["Vegeta's Son", "Goku's Son", "An Android", "Mr Satan's Son"],

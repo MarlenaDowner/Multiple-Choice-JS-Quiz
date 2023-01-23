@@ -1,14 +1,12 @@
-function printHighScore(){
-    
+function printHighScores(){
 
 }
 
-function clearHighscore(){
-
+function clearHighScores(){
 
 }
 
 let clearButton = document.getElementById("clear");
-clearButton.addEventListener("click", clearHighscore);
+clearButton.addEventListener("click", clearHighScores);
 
-printHighScore();
+printHighScores();
